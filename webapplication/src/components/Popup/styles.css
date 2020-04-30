@@ -1,0 +1,45 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-inner {
+  position: absolute;
+  padding: 15px;
+  min-width: 450px;
+  max-height: fit-content;
+  border-radius: 2px;
+  background: white;
+}
+
+.label {
+  font-size: 12px;
+  padding-top: 8px;
+  color: #797979;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.block-infos {
+  display: flex;
+  align-items: center;
+}
+
+.creationDate {
+  margin-left: 30px;
+}
+
+.popup-buttom {
+  margin-top: 15px;
+}

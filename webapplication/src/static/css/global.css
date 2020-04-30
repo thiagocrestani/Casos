@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  background-color: #fffefe;
+  font-family: Roboto, sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 850px;
+  min-width: 600px;
+  min-height: 80px;
+  padding: 25px;
+  display: block;
+  margin: 20px;
+  border-radius: 1px;
+  border: 1px solid #f7f7f7;
+}
+
+.input-block {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#Vermelho-tag {
+  background-color: #ff3300;
+  color: #ff3300;
+  max-width: 12px;
+  max-height: 12px;
+  min-height: 12px;
+  min-width: 12px;
+}
+
+#Amarelo-tag {
+  background-color: #ffff00;
+  color: #ffff00;
+  max-width: 12px;
+  max-height: 12px;
+  min-height: 12px;
+  min-width: 12px;
+}
+
+#Azul-tag {
+  background-color: #3366ff;
+  color: #3366ff;
+  max-width: 12px;
+  max-height: 12px;
+  min-height: 12px;
+  min-width: 12px;
+}
+
+#Rosa-tag {
+  background-color: #ff00ff;
+  color: #ff00ff;
+  max-width: 12px;
+  max-height: 12px;
+  min-height: 12px;
+  min-width: 12px;
+}
+
+#Roxo-tag {
+  background-color: #6600cc;
+  color: #6600cc;
+  max-width: 12px;
+  max-height: 12px;
+  min-height: 12px;
+  min-width: 12px;
+}
+
+#Laranja-tag {
+  background-color: #ff9900;
+  color: #ff9900;
+  max-width: 12px;
+  max-height: 12px;
+  min-height: 12px;
+  min-width: 12px;
+}
+
+#Verde-tag {
+  background-color: #33cc33;
+  color: #33cc33;
+  max-width: 12px;
+  max-height: 12px;
+  min-height: 12px;
+  min-width: 12px;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.loader {
+  border: 5px solid #e0e0e0; /* Light grey */
+  border-top: 5px solid #2e2e2e; /* Blue */
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

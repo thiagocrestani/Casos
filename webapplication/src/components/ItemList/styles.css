@@ -1,0 +1,45 @@
+.line{ 
+    font-size: 14px;
+    color: #302f2f;
+    position: static;
+}
+
+
+.secundary-item{
+    color: #a7a7a7;   
+}
+
+.item-line{
+    border: 1px solid #222222;
+    padding-right: 40px;
+}
+
+td {
+    border-top: 1px solid rgb(238, 238, 238); 
+}
+
+.buttom-icons{
+    display: flex;           
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.tag-list{
+    width: 10px;
+    min-width: 10px;
+    max-width: 10px;
+    height: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    background-color: crimson;
+    border-radius: 100px;
+    margin-left: 2px;
+    
+ }
+
+ .column-pasta{
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+ }
+

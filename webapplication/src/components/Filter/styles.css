@@ -1,0 +1,79 @@
+.filter-block {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(238, 238, 238);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.title-filter {
+  margin-top: -10px;
+  background-color: #ffffff;
+  width: 70px;
+  text-align: center;
+}
+
+.date-block {
+  display: flex;
+}
+
+.date-input {
+  width: 100%;
+}
+
+.date-left {
+  width: 100%;
+  padding-right: 20px;
+}
+
+.date-right {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.buttoms-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-caso-buttom {
+  margin-right: 10px;
+}
+
+.find-root {
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.find-input {
+  margin-left: 12px;
+  flex: 1;
+}
+
+.find-icon-button {
+  padding: 10;
+}
+
+.inputs-filter {
+  display: flex;
+  min-height: 75px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.input-type {
+  width: 30%;
+  padding-right: 20px;
+  bottom: 0;
+}
+
+.input-filter-by-type {
+  width: 100%;
+}
+
+.search {
+  margin-bottom: 25px;
+}

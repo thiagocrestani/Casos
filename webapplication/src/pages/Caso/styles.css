@@ -1,0 +1,32 @@
+.buttons-block{
+ display: flex;
+ margin-top: 15px;
+}
+
+.button-save{
+    margin-right:15px;
+}
+
+.input-pasta{
+    width: 100%;
+    padding-right: 20px;
+    bottom: 0;
+}
+
+.input-categorias{
+    width: 50%;
+}
+
+.pastaandcategorias-inputs{
+    display: flex;
+    min-height: 75px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.validation{
+    color: crimson;
+    font-size: 12px;
+}
+
+

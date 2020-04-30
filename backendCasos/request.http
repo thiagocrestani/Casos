@@ -1,0 +1,16 @@
+POST http://localhost:8080/newcasos
+Content-Type: application/json
+
+###
+GET http://localhost:8080/casos
+Accept: application/json
+
+###
+GET http://localhost:8080/casos
+Accept: application/json
+
+
+###
+GET http://localhost:8080/listCasos
+Content-Type: application/json
+
