@@ -89,11 +89,48 @@ class CasoController {
     @PostMapping
     @RequestMapping("/newcasos")
     @CrossOrigin
-    fun saveMuch(@RequestBody casos: Array<Caso>) : String {
+    fun saveMuch(@RequestBody casos: Iterable<Caso>) : String {
+        var casosToInsert = mutableListOf<Caso>()
+        var colors : List<String> = listOf("Vermelho", "Amarelo", "Azul", "Rosa", "Roxo", "Laranja", "Verde")
+        var errors : Int = 0
+        var error : Boolean = false
         for (caso in casos) {
-            casoRepository.save(caso)
+            error = false
+            if(caso.pasta != null && caso.pasta!!.length > 40){
+                error = true
+            }
+
+            if(caso.clientes == "" || caso.clientes == null){
+                error = true
+            }
+
+
+            if(caso.titulo == "" || caso.titulo == null){
+                error = true
+            }
+
+            if(caso.responsavel == "" || caso.responsavel == null){
+                error = true
+            }
+
+            if(caso.acesso != "Público" && caso.acesso != "Privado"){
+                error = true
+            }
+
+            for (itemEtiqueta in caso.etiqueta) {
+                if(!colors.contains(itemEtiqueta.cor)){
+                    error = true
+                }
+            }
+
+            if(!error) {
+                casosToInsert.add(caso)
+            }else{
+                errors ++
+            }
         }
-        return "all casos inserted"
+        casoRepository.saveAll(casosToInsert)
+        return casosToInsert.size.toString() + " Casos inserted with success, " + errors.toString() + " not inserted with error"
     }
 
     @PostMapping
