@@ -31,24 +31,25 @@ Também é possível buscar valores dentro da listagem recuperada, através do c
 
 Por fim o sistema possui uma API para inserção de casos em massa, para utilizar é necessário enviar uma requisição do tipo POST para o endereço ```https://casos-275318.uc.r.appspot.com/newcasos``` com o array de Casos, seguindo o modelo:
 ```
-[{
+[
+  {
     "id": null,
-    "pasta": "pasta", # Max 40 caracteres
-    "clientes": "clientes",
-    "titulo": "titulo",
-    "descricao": "descrição",
-    "observacoes": "observações",
-    "responsavel": "resposável",
-    "acesso": "Público", # Público | Privado
-    "etiqueta": [ # cores: "Vermelho", "Amarelo", "Azul", "Rosa", "Roxo", "Laranja", "Verde"
-      {
-        "cor": "Vermelho"
-      },
-      {
-        "cor": "Verde"
-      }
-    ]
-}] 
+    "pasta": "pasta", ## Max 40 caracters
+    "clientes": "Clientes", ## obrigatório
+    "titulo": "Título", ## obrigatório
+    "descricao": "Descrição",
+    "observacoes": "Observações",
+    "responsavel": "Responsável", ## obrigatório
+    "acesso": "Privado", ## Público | Privado
+    "etiqueta": [ ## cores: "Vermelho", "Amarelo", "Azul", "Rosa", "Roxo", "Laranja", "Verde"
+     {
+       "cor": "Vermelho"
+     },
+     {
+       "cor": "Verde"
+     }
+   ]}
+]
 ```
 
 ## Código
